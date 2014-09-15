@@ -1,0 +1,64 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+GYROMARGIN	fjollerier.c	12;"	d	file:
+GYROMARGIN	fjollerierunix.c	12;"	d	file:
+LIGHTMARGIN	fjollerier.c	11;"	d	file:
+LIGHTMARGIN	fjollerierunix.c	11;"	d	file:
+SPEED	fjollerier.c	10;"	d	file:
+SPEED	fjollerierunix.c	10;"	d	file:
+armstate	fjollerier.c	/^int armstate;$/;"	v
+armstate	fjollerierunix.c	/^int armstate;$/;"	v
+blackLineFunction	fjollerier.c	/^void blackLineFunction(int count) {$/;"	f
+blackLineFunction	fjollerierunix.c	/^void blackLineFunction(int count) {$/;"	f
+blackline	fjollerier.c	/^int linepresent, calibratedLight, light, blackline;$/;"	v
+blackline	fjollerierunix.c	/^int linepresent, calibratedLight, light, blackline;$/;"	v
+calibratedLight	fjollerier.c	/^int linepresent, calibratedLight, light, blackline;$/;"	v
+calibratedLight	fjollerierunix.c	/^int linepresent, calibratedLight, light, blackline;$/;"	v
+distance	fjollerier.c	/^int distance, objectclose;$/;"	v
+distance	fjollerierunix.c	/^int distance, objectclose;$/;"	v
+drive	fjollerier.c	/^void drive(int speeda, int speedb) {$/;"	f
+drive	fjollerierunix.c	/^void drive(int speeda, int speedb) {$/;"	f
+followLine	fjollerier.c	/^void followLine() {$/;"	f
+followLine	fjollerierunix.c	/^void followLine() {$/;"	f
+init	fjollerier.c	/^void init() {$/;"	f
+init	fjollerierunix.c	/^void init() {$/;"	f
+lcalibspeed	fjollerier.c	/^int leftspeed, rightspeed, lcalibspeed, rcalibspeed;$/;"	v
+lcalibspeed	fjollerierunix.c	/^int leftspeed, rightspeed, lcalibspeed, rcalibspeed;$/;"	v
+leftspeed	fjollerier.c	/^int leftspeed, rightspeed, lcalibspeed, rcalibspeed;$/;"	v
+leftspeed	fjollerierunix.c	/^int leftspeed, rightspeed, lcalibspeed, rcalibspeed;$/;"	v
+light	fjollerier.c	/^int linepresent, calibratedLight, light, blackline;$/;"	v
+light	fjollerierunix.c	/^int linepresent, calibratedLight, light, blackline;$/;"	v
+lineCount	fjollerier.c	/^int lineCount;$/;"	v
+lineCount	fjollerierunix.c	/^int lineCount;$/;"	v
+lineCounter	fjollerier.c	/^void lineCounter() {$/;"	f
+lineCounter	fjollerierunix.c	/^void lineCounter() {$/;"	f
+linepresent	fjollerier.c	/^int linepresent, calibratedLight, light, blackline;$/;"	v
+linepresent	fjollerierunix.c	/^int linepresent, calibratedLight, light, blackline;$/;"	v
+loop	fjollerier.c	/^void loop() {$/;"	f
+loop	fjollerierunix.c	/^void loop() {$/;"	f
+main	fjollerier.c	/^task main()$/;"	f
+main	fjollerierunix.c	/^task main()$/;"	f
+objectclose	fjollerier.c	/^int distance, objectclose;$/;"	v
+objectclose	fjollerierunix.c	/^int distance, objectclose;$/;"	v
+pickUpBottle	fjollerier.c	/^void pickUpBottle() {$/;"	f
+pickUpBottle	fjollerierunix.c	/^void pickUpBottle() {$/;"	f
+rcalibspeed	fjollerier.c	/^int leftspeed, rightspeed, lcalibspeed, rcalibspeed;$/;"	v
+rcalibspeed	fjollerierunix.c	/^int leftspeed, rightspeed, lcalibspeed, rcalibspeed;$/;"	v
+rightspeed	fjollerier.c	/^int leftspeed, rightspeed, lcalibspeed, rcalibspeed;$/;"	v
+rightspeed	fjollerierunix.c	/^int leftspeed, rightspeed, lcalibspeed, rcalibspeed;$/;"	v
+stop	fjollerier.c	/^void stop() {$/;"	f
+stop	fjollerierunix.c	/^void stop() {$/;"	f
+toggleArm	fjollerier.c	/^void toggleArm() {$/;"	f
+toggleArm	fjollerierunix.c	/^void toggleArm() {$/;"	f
+turn	fjollerier.c	/^void turn(int deg) {$/;"	f
+turn	fjollerierunix.c	/^void turn(int deg) {$/;"	f
+updateLight	fjollerier.c	/^void updateLight() {$/;"	f
+updateLight	fjollerierunix.c	/^void updateLight() {$/;"	f
+updateUltraSound	fjollerier.c	/^void updateUltraSound() {$/;"	f
+updateUltraSound	fjollerierunix.c	/^void updateUltraSound() {$/;"	f
+wheelTurns	fjollerier.c	/^void wheelTurns(int turns) {$/;"	f
+wheelTurns	fjollerierunix.c	/^void wheelTurns(int turns) {$/;"	f
