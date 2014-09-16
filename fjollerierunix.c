@@ -10,6 +10,9 @@
 #define SPEED 60
 #define LIGHTMARGIN 4
 #define GYROMARGIN 2
+#define OBJECTDIST 5
+#define BLACKLINEVAL 90 //this is a white line's value
+#define REVERSESPEED -60
 
 /*--GLOBAL VARIABLES--*/
 //Driving
@@ -59,10 +62,10 @@ void init() {
   //Set initial values
   lineCount = 0;
   armstate = true;
-  leftspeed = SPEED;
-  rightspeed = SPEED-10;
-  lcalibspeed = -50;
-  rcalibspeed = 50;
+  leftspeed = SPEED; //speed on the left wheel -100 - 100
+  rightspeed = SPEED-10; //speed on the right wheel -100 - 100
+  lcalibspeed = -50; //path-correction-speed on right wheel -100 - 100
+  rcalibspeed = 50; //^ on left wheel -100 - 100
     
   delay(500); //Wait some time before start
     
@@ -97,13 +100,13 @@ void loop() {
 void updateLight() {
   light = SensorValue(LightSensor); //get light sensor value
   linepresent = light < calibratedLight+LIGHTMARGIN && light > calibratedLight-LIGHTMARGIN; //check if line is present
-  blackline = light > 90; //LOOKING FOR WHITE LINE //check if black line is present
+  blackline = light > BLACKLINEVAL; //LOOKING FOR WHITE LINE //check if black line is present
   displayBigTextLine(4, "Light: %d", light); //write sensor value on screen
 }
 
 void updateUltraSound() {
   distance = SensorValue(DistanceSensor); //get distance in cm
-  objectclose = distance<5; //check if there is an object within 5cm
+  objectclose = distance<OBJECTDIST; //check if there is an object within 5cm
   displayBigTextLine(6, "Distance: %dcm", distance); //write distance on screen
 }
 
@@ -123,7 +126,7 @@ void pickUpBottle() {
   stop();
   turn(180); //make uturn
   while(SensorValue(PressureSensor) > 0) {
-    drive(-60, -60); //back up until button is pressed
+    drive(REVERSESPEED, REVERSESPEED); //back up until button is pressed
   }
   toggleArm(); //close arm grabbing bottle
 }
@@ -221,12 +224,15 @@ void blackLineFunction(int count) {
       turn(90);
       break;
     case 7: //circle with the bottles
-      /*
       wheelTurns(2);
-      turn(270);
+      turn(-90);
       wheelTurns(1);
+      //drive until circle
+      //put bottle in middle
+      //drive to other bottle
+      //put in the middle
+      //drive back to exit
       break;
-      */
     case 8:
       turn(90);
       wheelTurns(3);
